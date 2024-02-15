@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-color: hsl(30, 38%, 92%); 
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 14px;
+   font-family: "Montserrat", sans-serif;
+}
+
+/* main container */
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+/* image section */
+.image-section{
+    width: 200px;
+    height: 300px;
+}
+.image-section img{
+    width: 100%;
+}
+
+/* Product section */
+.product-details{
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px 20px 8px 20px;
+    width: 200px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+span{
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 9px;
+    color: hsl(32, 7%, 58%);
+}
+h1{
+    font-size: 28px;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    line-height: 1;
+    margin: 10px 0 15px 0;
+}
+
+p{
+    font-size: 10px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: hsl(32, 7%, 58%);
+    width: 175px;
+    margin-bottom: 16px;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    font-size: 20px;
+    color:  hsl(129, 88%, 32%);
+    font-weight: 800;
+}
+
+.prices{
+    margin-top: 4px;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+a{
+    background-color:  hsl(130, 92%, 15%);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+/* Media Quiry */
+
+@media (max-width:375px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .image-section{
+        width: auto;
+        margin-bottom: 60px;
+    }
+    
+    .product-details{
+        width: auto;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+    }
+    span{
+        font-size: 18px;
+    }
+
+    h1{
+        font-size: 30px;
+        margin: 20px 0 20px 0;
+    }
+
+    p{
+        font-size: 18px;
+        width: 110%;
+    }
+
+    .price{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .prices{
+        font-size: 16px;
+        text-decoration: line-through black;
+    }
+
+    a{
+        padding: 20px;
+        font-size: 25px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+    }
+    .carton{
+        height: 30px;
+    }
+}
